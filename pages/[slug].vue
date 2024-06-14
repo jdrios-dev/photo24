@@ -1,7 +1,6 @@
 <script setup>
 import { editions } from "../data/challenges";
-import Title from "@/components/title";
-
+import Title from "../components/Title.vue";
 const route = useRoute();
 const slug = route.params.slug;
 const data = editions?.find((item) => item?.slug === slug);
