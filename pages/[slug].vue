@@ -1,6 +1,6 @@
 <script setup>
 import { editions } from "../data/challenges";
-import Title from "../components/title";
+import Title from "@/components/title";
 
 const route = useRoute();
 const slug = route.params.slug;
