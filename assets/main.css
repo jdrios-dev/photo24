@@ -135,7 +135,17 @@ body {
 	margin-bottom: 3rem;
 }
 
-.hero-description {
+.hero-subtitle {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+.paragraph-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.paragraph {
 	margin-bottom: 3rem;
 }
 
@@ -159,37 +169,35 @@ body {
 	box-shadow: 0px 5px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.square {
+	background-color: rgba(238, 238, 238, 1);
+	border-radius: 16px;
+	z-index: -1;
+	position: absolute;
+}
+
 .square1 {
 	width: 200px;
-	height: 140px;
-	position: absolute;
-	z-index: -1;
 	top: 30%;
 	right: 35%;
 }
 
 .square2 {
 	width: 220px;
-	height: 160px;
-	position: absolute;
-	z-index: -1;
 	top: 40%;
 	right: 60%;
 }
 
 .square3 {
 	width: 300px;
-	height: 160px;
-	position: absolute;
 	top: 60%;
 	right: 20%;
-	z-index: -1;
 }
 
 .hero-img {
-	width: 300px;
+	width: 100%;
 	border-radius: 16px;
-	opacity: 0.5;
+	filter: opacity(0.5);
 }
 
 .editions-buttons {
@@ -197,12 +205,6 @@ body {
 	flex-wrap: wrap;
 	list-style: none;
 	justify-content: center;
-}
-
-.edition-description {
-	margin: 0 auto;
-	margin-bottom: 2rem;
-	max-width: 800px;
 }
 
 .editions-buttons li {
