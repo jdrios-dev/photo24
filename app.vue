@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<NuxtLayout>
+		<NuxtLayout name="custom">
 			<div class="header-container">
 				<header class="header">
 					<NuxtLink to="/"> Home </NuxtLink>
