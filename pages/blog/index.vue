@@ -1,3 +1,35 @@
 <template>
-	<div>Blog, experiences, tutorials and more... very soon!</div>
+	<div class="blog-card" v-for="item in dataBlog">
+		<NuxtLink :to="`blog/${item.slug}`">
+			<img class="blog-card-img" :src="item.images[0]" :alt="item.slug" />
+			<div class="card-details">
+				<h4>{{ item.title }}</h4>
+				<p class="card-date">{{ item.date }}</p>
+			</div>
+		</NuxtLink>
+	</div>
 </template>
+
+<script setup>
+import dataBlog from "../../data/blogs";
+</script>
+
+<style>
+.blog-card {
+	width: 300px;
+	border: 1px solid var(--colorGrey);
+	border-radius: 16px;
+	overflow: hidden;
+}
+.blog-card-img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+.card-details {
+	padding: 0.5rem;
+}
+.card-date {
+	font-size: 0.9rem;
+}
+</style>
