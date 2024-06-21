@@ -1,7 +1,7 @@
 <script setup>
-defineProps(["title", "subtitle"]);
+defineProps(["subtitle"]);
 </script>
 <template>
-	<h1 v-if="!subtitle" class="hero-title">{{ title }}</h1>
-	<h2 v-else="subtitle" class="hero-subtitle">{{ title }}</h2>
+	<h1 v-if="!subtitle" class="hero-title"><slot /></h1>
+	<h2 v-else="subtitle" class="hero-subtitle"><slot /></h2>
 </template>

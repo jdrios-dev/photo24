@@ -1,17 +1,21 @@
 <template>
-	<div class="blog-card" v-for="item in dataBlog">
-		<NuxtLink :to="`blog/${item.slug}`">
-			<img class="blog-card-img" :src="item.images[0]" :alt="item.slug" />
-			<div class="card-details">
-				<h4>{{ item.title }}</h4>
-				<p class="card-date">{{ item.date }}</p>
-			</div>
-		</NuxtLink>
+	<Title>Blog</Title>
+	<div class="blog-container">
+		<div class="blog-card" v-for="item in dataBlog">
+			<NuxtLink :to="`blog/${item.slug}`">
+				<img class="blog-card-img" :src="item.images[0]" :alt="item.slug" />
+				<div class="card-details">
+					<h4>{{ item.title }}</h4>
+					<p class="card-date">{{ item.date }}</p>
+				</div>
+			</NuxtLink>
+		</div>
 	</div>
 </template>
 
 <script setup>
 import dataBlog from "../../data/blogs";
+import Title from "../components/Title.vue";
 </script>
 
 <style>
@@ -31,5 +35,8 @@ import dataBlog from "../../data/blogs";
 }
 .card-date {
 	font-size: 0.9rem;
+}
+.blog-container {
+	padding: 0 5px;
 }
 </style>

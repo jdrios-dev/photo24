@@ -15,7 +15,7 @@ import ButtonLink from "../components/ButtonLink.vue";
 		<div class="square square2">
 			<img class="hero-img" alt="sydney" src="../assets/hero2.jpg" />
 		</div>
-		<Title title="The Ultimate Photography Challenge"></Title>
+		<Title>The Ultimate Photography Challenge</Title>
 
 		<Paragraph
 			text="Discover the art of manual photography through an exciting journey across
@@ -30,7 +30,7 @@ import ButtonLink from "../components/ButtonLink.vue";
 		<ButtonLink text="Capture Your World!" slug="editions" />
 	</div>
 	<div>
-		<Title title="How does it work?" :subtitle="true"></Title>
+		<Title :subtitle="true">How does it work?</Title>
 
 		<Paragraph
 			text="Photo24 organizes exciting photography challenges that explore various

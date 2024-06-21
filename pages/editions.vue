@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Title title="Editions"></Title>
+		<Title>Editions</Title>
 
 		<Paragraph
 			text="The challenges are organized by city, with more to be added over time. Are

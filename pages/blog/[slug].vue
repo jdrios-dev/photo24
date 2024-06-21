@@ -1,5 +1,5 @@
 <template>
-	<Title :title="data.title"></Title>
+	<Title>{{ data.title }}</Title>
 	<Paragraph :text="data.description" />
 
 	<span class="author">{{ data.author }} • {{ data.date }}</span>
@@ -66,5 +66,18 @@ figcaption {
 	opacity: 0.8;
 	margin-bottom: 4rem;
 	display: block;
+}
+/* Tablet */
+@media only screen and (max-width: 600px) {
+	.container {
+		column-count: 2;
+	}
+}
+/* Phones */
+@media only screen and (max-width: 480px) {
+	.container {
+		column-count: 1;
+		padding: 0 5px;
+	}
 }
 </style>

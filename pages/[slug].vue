@@ -8,7 +8,7 @@ const data = editions?.find((item) => item?.slug === slug);
 
 <template>
 	<div>
-		<Title :title="data.name"></Title>
+		<Title>{{ data.name }}</Title>
 		<ul class="list">
 			<li
 				@click="updateChallengeById(item.id)"
