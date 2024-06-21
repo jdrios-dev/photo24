@@ -39,4 +39,19 @@ import Title from "../components/Title.vue";
 .blog-container {
 	padding: 0 5px;
 }
+
+@media only screen and (max-width: 480px) {
+	.container {
+		column-count: 1;
+		padding: 0 5px;
+	}
+
+	.blog-card {
+		min-width: 100%;
+	}
+
+	.blog-card-img {
+		width: 100%;
+	}
+}
 </style>
